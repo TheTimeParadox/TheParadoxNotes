@@ -1,5 +1,5 @@
 function Image(img)
-      if img.classes:find('vscode',1) then
+      if img.classes:find('filter',1) then
         local f = io.open("./TheParadoxNotes/" .. img.src, 'r')
         local doc = pandoc.read(f:read('*a'))
         f:close()
